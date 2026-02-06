@@ -1,82 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Ameer_aaz | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ameer Aaz — Cyber Command Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Hi, I'm Ameer_aaz 👋</h1>
-    <p>Cyber Security Analyst • Web Developer • Hardware Maintenance Engineer</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </header>
+<div class="cyber-bg"></div>
 
-  <!-- ABOUT ME -->
-  <section>
-    <h2>About Me</h2>
+<header class="topbar">
+  <span>CYBER OPERATIONS TERMINAL</span>
+</header>
+
+<section class="hero">
+  <div class="identity">
+    <h1>AMEER AAZ</h1>
+    <p>Cybersecurity Analyst • Web Developer • Graphic Designer • Hardware Specialist</p>
+  </div>
+
+  <div class="status">
+    <div class="stat">SYSTEM STATUS: ACTIVE</div>
+    <div class="stat">SECURITY LEVEL: HIGH</div>
+    <div class="stat">NETWORK: SECURED</div>
+  </div>
+</section>
+
+<main class="grid-layout">
+
+  <section class="panel">
+    <h2>PROFILE DATA</h2>
     <p>
-      I’m a friendly tech enthusiast who enjoys securing systems, building modern websites,
-      and keeping hardware running smoothly. I believe technology should be secure, reliable, and easy to use.
+      Ameer Aaz is a multidisciplinary tech specialist blending cybersecurity, web development, graphic design, and hardware maintenance into secure, modern, and reliable solutions.
     </p>
   </section>
 
-  <!-- WHAT I DO -->
-  <section>
-    <h2>What I Do</h2>
-
-    <div class="card">
-      <h3>🔐 Cyber Security</h3>
-      <p>Protecting systems, identifying vulnerabilities, and applying security best practices.</p>
-    </div>
-
-    <div class="card">
-      <h3>🌐 Web Development</h3>
-      <p>Building responsive, clean websites that are secure and user-friendly.</p>
-    </div>
-
-    <div class="card">
-      <h3>🛠️ Hardware Maintenance</h3>
-      <p>Troubleshooting, repairing, and maintaining computer systems for reliability.</p>
-    </div>
-
+  <section class="panel">
+    <h2>CORE CAPABILITIES</h2>
+    <ul>
+      <li>Ethical Hacking & Pen Testing</li>
+      <li>Network Security & Monitoring</li>
+      <li>Web Development</li>
+      <li>Graphic Design & Branding</li>
+      <li>Linux & System Administration</li>
+      <li>Hardware Repair & Optimization</li>
+    </ul>
   </section>
 
-  <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
-
-    <div class="card">
-      <h3>Personal Portfolio Website</h3>
-      <p>Designed and deployed a friendly, mobile-friendly portfolio using HTML and CSS.</p>
+  <section class="panel">
+    <h2>OPERATIONS & SERVICES</h2>
+    <div class="cards">
+      <div class="card">Cybersecurity & Threat Defense</div>
+      <div class="card">Website & App Development</div>
+      <div class="card">Graphic & UI Design</div>
+      <div class="card">Computer Repair & Maintenance</div>
     </div>
-
-    <div class="card">
-      <h3>Security Practice Lab</h3>
-      <p>Worked on network and system security exercises to practice vulnerability assessment.</p>
-    </div>
-
-    <div class="card">
-      <h3>Hardware Maintenance</h3>
-      <p>Handled PC/laptop troubleshooting, OS installations, and upgrades.</p>
-    </div>
-
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: ameenusaeed001@gmail.com</p>
-    <p>WhatsApp: 09163318375</p>
+  <section class="panel">
+    <h2>MISSION HISTORY</h2>
+    <div class="logs">
+      <div class="log">Secure Login Platform — Completed</div>
+      <div class="log">Network Security Lab — Tested</div>
+      <div class="log">Creative Brand System — Delivered</div>
+    </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Ameer_aaz. All rights reserved.</p>
-  </footer>
+  <section class="panel contact">
+    <h2>CONTACTS</h2>
+    <button class="contact-btn" onclick="toggleContact()">SHOW CONTACTS</button>
+    <div id="contact-info" class="contact-info">
+      <p>Email: <a href="mailto:ameenusaeed001@email.com">ameenusaeed001@email.com</a></p>
+      <p>Phone / WhatsApp: 09163318375</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Ameer Aaz — Cyber Command Portfolio
+</footer>
+
+<script>
+  function toggleContact() {
+    const info = document.getElementById('contact-info');
+    if (info.style.display === 'block') {
+      info.style.display = 'none';
+    } else {
+      info.style.display = 'block';
+    }
+  }
+</script>
 
 </body>
 </html>
