@@ -1,66 +1,177 @@
-/* GENERAL STYLES */
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
-  background: #0f172a;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
   color: #e5e7eb;
+  background: #070b14;
+  overflow-x: hidden;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #2563eb, #22c55e);
-  color: white;
+/* ---------- MULTI-LAYER BACKGROUND ---------- */
+.cyber-bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(0,255,170,0.15), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(0,140,255,0.12), transparent 45%),
+    linear-gradient(135deg, #05080f, #0a1122);
+  z-index: -2;
 }
 
-header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+.cyber-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255,255,255,0.03) 0px,
+    rgba(255,255,255,0.03) 1px,
+    transparent 2px,
+    transparent 8px
+  );
+  animation: scroll 12s linear infinite;
 }
 
-header p {
-  font-size: 16px;
-  margin-bottom: 15px;
+@keyframes scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(60px); }
 }
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: white;
-  color: #2563eb;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+/* ---------- TOP BAR ---------- */
+.topbar {
+  padding: 12px 5%;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: #00ffaa;
+  font-size: 0.9rem;
 }
 
-/* SECTIONS */
-section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+/* ---------- HERO ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 30px;
+  padding: 90px 8%;
 }
 
-h2 {
-  color: #22c55e;
-  text-align: center;
-  margin-bottom: 25px;
+.identity h1 {
+  font-size: 3.4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #00ffaa;
 }
 
-/* CARDS */
+.identity p {
+  margin-top: 12px;
+  opacity: 0.8;
+}
+
+/* STATUS BLOCK */
+.status {
+  display: grid;
+  gap: 12px;
+}
+
+.stat {
+  padding: 14px;
+  background: rgba(0,255,170,0.06);
+  border: 1px solid rgba(0,255,170,0.25);
+  border-radius: 10px;
+}
+
+/* ---------- MAIN GRID ---------- */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 40px 8%;
+}
+
+/* ---------- PANELS ---------- */
+.panel {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 28px;
+  transition: 0.3s ease;
+}
+
+.panel:hover {
+  border-color: #00ffaa;
+  background: rgba(0,255,170,0.08);
+}
+
+.panel h2 {
+  margin-bottom: 14px;
+  color: #00ffaa;
+  font-size: 1.2rem;
+}
+
+/* ---------- CARDS ---------- */
+.cards {
+  display: grid;
+  gap: 14px;
+}
+
 .card {
-  background: #020617;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
+  padding: 14px;
+  background: rgba(0,255,170,0.08);
+  border-radius: 10px;
 }
 
-/* FOOTER */
+/* ---------- LOGS ---------- */
+.logs {
+  display: grid;
+  gap: 10px;
+}
+
+.log {
+  padding: 12px;
+  border-left: 3px solid #00ffaa;
+  background: rgba(0,255,170,0.05);
+}
+
+/* ---------- CONTACT ---------- */
+.contact-btn {
+  padding: 12px 22px;
+  background: #00ffaa;
+  border: none;
+  color: #070b14;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: 0.25s ease;
+}
+
+.contact-btn:hover {
+  background: #00cc88;
+}
+
+.contact-info {
+  display: none;
+  padding: 12px 0;
+  opacity: 0.9;
+}
+
+/* ---------- FOOTER ---------- */
 footer {
   text-align: center;
   padding: 20px;
-  background: #020617;
-  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  opacity: 0.7;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .identity h1 {
+    font-size: 2.4rem;
+  }
 }
