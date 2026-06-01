@@ -1,98 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ameer Aaz — Cyber Command Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ameer Aaz Dashboard Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
 <body>
 
-<div class="cyber-bg"></div>
+  <!-- Sidebar -->
+  <aside class="sidebar">
 
-<header class="topbar">
-  <span>CYBER OPERATIONS TERMINAL</span>
-</header>
-
-<section class="hero">
-  <div class="identity">
-    <h1>AMEER AAZ</h1>
-    <p>Cybersecurity Analyst • Web Developer • Graphic Designer • Hardware Specialist</p>
-  </div>
-
-  <div class="status">
-    <div class="stat">SYSTEM STATUS: ACTIVE</div>
-    <div class="stat">SECURITY LEVEL: HIGH</div>
-    <div class="stat">NETWORK: SECURED</div>
-  </div>
-</section>
-
-<main class="grid-layout">
-
-  <section class="panel">
-    <h2>PROFILE DATA</h2>
-    <p>
-      Ameer Aaz is a multidisciplinary tech specialist blending cybersecurity, web development, graphic design, and hardware maintenance into secure, modern, and reliable solutions.
-    </p>
-  </section>
-
-  <section class="panel">
-    <h2>CORE CAPABILITIES</h2>
-    <ul>
-      <li>Ethical Hacking & Pen Testing</li>
-      <li>Network Security & Monitoring</li>
-      <li>Web Development</li>
-      <li>Graphic Design & Branding</li>
-      <li>Linux & System Administration</li>
-      <li>Hardware Repair & Optimization</li>
-    </ul>
-  </section>
-
-  <section class="panel">
-    <h2>OPERATIONS & SERVICES</h2>
-    <div class="cards">
-      <div class="card">Cybersecurity & Threat Defense</div>
-      <div class="card">Website & App Development</div>
-      <div class="card">Graphic & UI Design</div>
-      <div class="card">Computer Repair & Maintenance</div>
+    <div class="logo">
+      <h2>AMEER<span>AAZ</span></h2>
     </div>
-  </section>
 
-  <section class="panel">
-    <h2>MISSION HISTORY</h2>
-    <div class="logs">
-      <div class="log">Secure Login Platform — Completed</div>
-      <div class="log">Network Security Lab — Tested</div>
-      <div class="log">Creative Brand System — Delivered</div>
-    </div>
-  </section>
+    <nav>
 
-  <section class="panel contact">
-    <h2>CONTACTS</h2>
-    <button class="contact-btn" onclick="toggleContact()">SHOW CONTACTS</button>
-    <div id="contact-info" class="contact-info">
-      <p>Email: <a href="mailto:ameenusaeed001@email.com">ameenusaeed001@email.com</a></p>
-      <p>Phone / WhatsApp: 09163318375</p>
-    </div>
-  </section>
+      <a href="#dashboard">
+        <i class="fas fa-chart-line"></i>
+        Dashboard
+      </a>
 
-</main>
+      <a href="#about">
+        <i class="fas fa-user"></i>
+        About
+      </a>
 
-<footer>
-  © 2026 Ameer Aaz copyright ©️ reserved
-</footer>
+      <a href="#services">
+        <i class="fas fa-code"></i>
+        Services
+      </a>
 
-<script>
-  function toggleContact() {
-    const info = document.getElementById('contact-info');
-    if (info.style.display === 'block') {
-      info.style.display = 'none';
-    } else {
-      info.style.display = 'block';
-    }
-  }
-</script>
+      <a href="#skills">
+        <i class="fas fa-laptop-code"></i>
+        Skills
+      </a>
+
+      <a href="#contact">
+        <i class="fas fa-envelope"></i>
+        Contact
+      </a>
+
+    </nav>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Dashboard Hero -->
+    <section class="dashboard" id="dashboard">
+
+      <div class="dashboard-text">
+
+        <p class="tag">PROFESSIONAL DASHBOARD PORTFOLIO</p>
+
+        <h1>
+          Ameer <span>Aaz</span>
+        </h1>
+
+        <h3 class="typing-text"></h3>
+
+        <p class="desc">
+          Specialized in App Development, Web Development,
+          Penetration Testing, Graphic Design, Hardware Maintenance,
+          C++, Java and modern cyber security solutions.
+        </p>
+
+        <div class="buttons">
+
+          <a href="#contact" class="btn">
+            Hire Me
+          </a>
+
+          <a href="https://github.com/ameer-aaz🎭" class="btn-outline">
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="dashboard-cards">
+
+        <div class="card">
+          <i class="fas fa-code"></i>
+          <h2>Web Development</h2>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-mobile-alt"></i>
+          <h2>App Development</h2>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-user-secret"></i>
+          <h2>Penetration Testing</h2>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-palette"></i>
+          <h2>Graphic Design</h2>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+      <h2>About Me</h2>
+
+      <div class="about-box">
+
+        <p>
+          I'm Ameer Aaz, a passionate developer and cyber security enthusiast
+          focused on building futuristic digital experiences.
+          I specialize in web development, app development,
+          penetration testing, graphic design and hardware maintenance.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+      <h2>My Services</h2>
+
+      <div class="service-container">
+
+        <div class="service-box">
+          <i class="fas fa-globe"></i>
+          <h3>Web Development</h3>
+        </div>
+
+        <div class="service-box">
+          <i class="fas fa-mobile-screen"></i>
+          <h3>App Development</h3>
+        </div>
+
+        <div class="service-box">
+          <i class="fas fa-shield-halved"></i>
+          <h3>Penetration Testing</h3>
+        </div>
+
+        <div class="service-box">
+          <i class="fas fa-paintbrush"></i>
+          <h3>Graphic Design</h3>
+        </div>
+
+        <div class="service-box">
+          <i class="fas fa-screwdriver-wrench"></i>
+          <h3>Hardware Maintenance</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+
+      <h2>Technical Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Cyber Security</div>
+        <div class="skill-card">Penetration Testing</div>
+        <div class="skill-card">Graphic Design</div>
+
+      </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+      <h2>Contact Me</h2>
+
+      <div class="contact-box">
+
+        <p>
+          <i class="fas fa-envelope"></i>
+          ameenusaeed001@gmail.com
+        </p>
+
+        <p>
+          <i class="fas fa-phone"></i>
+          09163318375
+        </p>
+
+        <p>
+          <i class="fab fa-github"></i>
+          github.com/ameer-aaz🎭
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
-
